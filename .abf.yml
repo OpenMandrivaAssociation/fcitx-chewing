@@ -1,2 +1,5 @@
+removed_sources:
+  fcitx-chewing-0.2.0.tar.xz: cb570a2b8343ef8a843979716a625cd0e3a16ff3
+  fcitx-chewing-0.2.2.tar.gz: 2d769b8c891618b63fec292a3e573bea675002d3
 sources:
-  "fcitx-chewing-0.2.0.tar.xz": cb570a2b8343ef8a843979716a625cd0e3a16ff3
+  fcitx-chewing-0.2.2.tar.xz: a968faac00fd472282c7858b4bd242c9d51da76e

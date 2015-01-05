@@ -2,11 +2,11 @@
 %define scmrev %{nil}
 
 Name: fcitx-chewing
-Version: 0.2.0
+Version: 0.2.2
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
 Release: 8
-Source0: http://fcitx.googlecode.com/files/%{name}-%{version}.tar.xz
+Source0: http://download.fcitx-im.org/fcitx-chewing/%{name}-%{version}.tar.xz
 %else
 Release: 0.%{scmrev}.1
 Source0: %{name}-%{scmrev}.tar.xz
@@ -21,7 +21,7 @@ Source0: %{name}-%{scmrev}.tar.xz
 %endif
 %endif
 Summary: Chewing/Qooing (Chinese IM) plugin for fcitx
-URL: http://fcitx.googlecode.com/
+URL: http://www.fcitx-im.org
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
@@ -30,7 +30,7 @@ BuildRequires: pkgconfig(chewing)
 
 %track
 prog %{name} = {
-	url = http://code.google.com/p/fcitx/downloads/list
+	url = http://download.fcitx-im.org/fcitx-chewing/
 	regex = %name-(__VER__)\.tar\.xz
 	version = %{version}
 }
@@ -59,3 +59,8 @@ Chewing/Qooing (Chinese IM) plugin for fcitx
 %_datadir/fcitx/configdesc/fcitx-chewing.desc
 %_datadir/fcitx/imicon/chewing.png
 %_datadir/fcitx/inputmethod/chewing.conf
+%_datadir/fcitx/skin/classic/chewing.png
+%_datadir/fcitx/skin/dark/chewing.png
+%_datadir/fcitx/skin/default/chewing.png
+%_iconsdir/hicolor/48x48/apps/fcitx-chewing.png
+
