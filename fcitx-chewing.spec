@@ -28,13 +28,6 @@ BuildRequires: cmake
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(chewing)
 
-%track
-prog %{name} = {
-	url = http://download.fcitx-im.org/fcitx-chewing/
-	regex = %name-(__VER__)\.tar\.xz
-	version = %{version}
-}
-
 %description
 Chewing/Qooing (Chinese IM) plugin for fcitx
 
