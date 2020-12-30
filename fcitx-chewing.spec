@@ -2,21 +2,21 @@
 %define scmrev %{nil}
 
 Name: fcitx-chewing
-Version: 0.2.2
+Version:	0.2.3
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release: 10
+Release:	1
 Source0: http://download.fcitx-im.org/fcitx-chewing/%{name}-%{version}.tar.xz
 %else
-Release: 0.%{scmrev}.1
+Release:	1
 Source0: %{name}-%{scmrev}.tar.xz
 %endif
 %else
 %if "%{scmrev}" == ""
-Release: 0.%{beta}.1
+Release:	1
 Source0: %{name}-%{version}%{beta}.tar.bz2
 %else
-Release: 0.%{beta}.0.%{scmrev}.1
+Release:	1
 Source0: %{name}-%{scmrev}.tar.xz
 %endif
 %endif
