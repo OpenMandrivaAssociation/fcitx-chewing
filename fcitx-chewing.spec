@@ -5,18 +5,18 @@ Name: fcitx-chewing
 Version:	0.2.3
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release:	1
+Release:	2
 Source0: http://download.fcitx-im.org/fcitx-chewing/%{name}-%{version}.tar.xz
 %else
-Release:	1
+Release:	2
 Source0: %{name}-%{scmrev}.tar.xz
 %endif
 %else
 %if "%{scmrev}" == ""
-Release:	1
+Release:	2
 Source0: %{name}-%{version}%{beta}.tar.bz2
 %else
-Release:	1
+Release:	2
 Source0: %{name}-%{scmrev}.tar.xz
 %endif
 %endif
